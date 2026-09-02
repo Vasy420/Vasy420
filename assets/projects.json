@@ -1,0 +1,21 @@
+{
+  "_comment": "Featured repos, in README order. Star/fork/language come live from the API on every run; the description here overrides the repo's GitHub description.",
+  "projects": [
+    {
+      "repo": "Unishare",
+      "description": "Secure file sharing with WebRTC P2P, Bluetooth, QR codes, live chat, and RSA/AES encryption at rest."
+    },
+    {
+      "repo": "CarSim",
+      "description": "A 60 FPS browser car sim where a 99-parameter neural net learns to drive through genetic evolution."
+    },
+    {
+      "repo": "Crafthost",
+      "description": "Cloud Minecraft hosting that bin-packs servers onto Azure VMs, with a live console over WebSockets."
+    },
+    {
+      "repo": "FaceMatcher",
+      "description": "Live face recognition and emotion classification over WebSockets, DeepFace, and 128-d vector search."
+    }
+  ]
+}

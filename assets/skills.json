@@ -1,0 +1,13 @@
+{
+  "title": "Skill Radar",
+  "_comment": "Self-rated 0-100. Edit these and re-run scripts/radar.py (or the Charts and cards workflow). Five to eight axes reads best.",
+  "axes": [
+    { "label": "JavaScript", "value": 88 },
+    { "label": "Python",     "value": 84 },
+    { "label": "React",      "value": 86 },
+    { "label": "Node / API", "value": 80 },
+    { "label": "Databases",  "value": 76 },
+    { "label": "Cloud / DevOps", "value": 72 },
+    { "label": "ML / CV",    "value": 70 }
+  ]
+}
