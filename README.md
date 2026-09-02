@@ -92,11 +92,12 @@ the web and machine learning, and I ship them when neither of those is cooperati
 
 <br><br>
 
-<!-- Snake eats the contribution graph - .github/workflows/snake.yml -->
+<!-- Snake eats the contribution graph - .github/workflows/snake.yml
+     width 90% (not 100%) so the animation stays inside the profile column. -->
 <picture>
   <source media="(prefers-color-scheme: dark)"  srcset="https://raw.githubusercontent.com/Vasy420/Vasy420/output/snake-dark.svg">
   <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Vasy420/Vasy420/output/snake.svg">
-  <img src="https://raw.githubusercontent.com/Vasy420/Vasy420/output/snake.svg" width="100%" alt="snake eating the contribution graph">
+  <img src="https://raw.githubusercontent.com/Vasy420/Vasy420/output/snake-dark.svg" width="90%" alt="snake eating the contribution graph">
 </picture>
 
 </div>
@@ -118,11 +119,7 @@ the web and machine learning, and I ship them when neither of those is cooperati
 
 <br>
 
-<img src="assets/metrics.languages.svg" height="165" alt="most used languages">
-
-<br><br>
-
-<img src="assets/metrics.achievements.svg" width="90%" alt="achievements">
+<img src="assets/metrics.languages.svg" width="420" alt="most used languages">
 
 </div>
 
