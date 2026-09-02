@@ -75,7 +75,7 @@ if ($Image) {
     # NB: not $args — that is a reserved PowerShell automatic variable
     $dotArgs = @(
         (Join-Path $root 'scripts\dotify.py'), $Image,
-        '-o', (Join-Path $root 'assets\portrait'),
+        '-o', (Join-Path $root 'assets\avatar'),
         '--mode', $Mode, '--cols', $Cols
     )
     if ($Square)  { $dotArgs += @('--square', '--focus', $Focus) }

@@ -73,21 +73,21 @@ snake every 12h, radar daily).
 The current one was made with:
 
 ```powershell
-python scripts\dotify.py assets\github-avatar.png -o assets\portrait --cols 100 --equalize --detail 0.5 --color --reveal
+python scripts\dotify.py assets\github-avatar.png -o assets\avatar --cols 100 --equalize --detail 0.5 --color --reveal
 ```
 
 Other looks from the same source:
 
 ```powershell
 # green monochrome, matching the contribution-graph palette
-python scripts\dotify.py assets\github-avatar.png -o assets\portrait --cols 88 --equalize --detail 0.5 --invert --animate
+python scripts\dotify.py assets\github-avatar.png -o assets\avatar --cols 88 --equalize --detail 0.5 --invert --animate
 
 # literal 0s and 1s instead of dots
-python scripts\dotify.py assets\github-avatar.png -o assets\portrait --mode binary --cols 62 --equalize --detail 0.5 --invert
+python scripts\dotify.py assets\github-avatar.png -o assets\avatar --mode binary --cols 62 --equalize --detail 0.5 --invert
 
 # plain text art — paste the .txt into a ``` code block in the README
-python scripts\dotify.py assets\github-avatar.png -o assets\portrait --mode ascii --cols 80 --invert
-python scripts\dotify.py assets\github-avatar.png -o assets\portrait --mode braille --cols 100 --invert
+python scripts\dotify.py assets\github-avatar.png -o assets\avatar --mode ascii --cols 80 --invert
+python scripts\dotify.py assets\github-avatar.png -o assets\avatar --mode braille --cols 100 --invert
 ```
 
 Worth knowing:
@@ -99,7 +99,7 @@ Worth knowing:
 - `--detail 0.5` then puts local facial structure back on top, since equalising flattens
   it. Above about 1.0 it starts looking noisy.
 - `--color` keeps each dot's original pixel colour. Because the fills then come from the
-  photo rather than a theme, it writes a single `portrait.svg` instead of a
+  photo rather than a theme, it writes a single `avatar.svg` instead of a
   `-dark`/`-light` pair — the README references it directly.
 - `--cols` is the whole quality/size dial. 60 is chunky and abstract, 100 is what's in
   use now (325 KB), 130 is more detailed but pushes past 500 KB.

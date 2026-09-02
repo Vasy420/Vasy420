@@ -26,15 +26,15 @@
 <h2>portrait <button id="replay">replay the load-in</button></h2>
 <div class="row">
   <div class="card"><span class="tag">portrait.svg (on dark)</span>
-    <img class="portrait" src="assets/portrait.svg" width="300" onerror="this.replaceWith(Object.assign(document.createElement('p'),{className:'missing',textContent:'not generated yet — run dotify.py'}))"></div>
+    <img class="portrait" src="assets/avatar.svg" width="300" onerror="this.replaceWith(Object.assign(document.createElement('p'),{className:'missing',textContent:'not generated yet — run dotify.py'}))"></div>
   <div class="card light"><span class="tag" style="color:#57606a">portrait.svg (on light)</span>
-    <img class="portrait" src="assets/portrait.svg" width="300" onerror="this.replaceWith(Object.assign(document.createElement('p'),{className:'missing',textContent:'not generated yet'}))"></div>
+    <img class="portrait" src="assets/avatar.svg" width="300" onerror="this.replaceWith(Object.assign(document.createElement('p'),{className:'missing',textContent:'not generated yet'}))"></div>
 </div>
 <script>
   // The row-reveal runs once per image load, so force a fresh load to rewatch it.
   document.getElementById('replay').onclick = () => {
     document.querySelectorAll('img.portrait').forEach(img => {
-      img.src = 'assets/portrait.svg?' + Date.now();
+      img.src = 'assets/avatar.svg?' + Date.now();
     });
   };
 </script>
