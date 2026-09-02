@@ -8,7 +8,7 @@ Everything here goes into a repo named **exactly the same as your GitHub usernam
 ## 1. Fill in the placeholders
 
 ```powershell
-.\setup.ps1 -Username Vasy420 -Name "Siluveru Vashishta" -Image .\assets\me.png -Color
+.\setup.ps1 -Username Vasy420 -Name "Vasy420" -Image .\assets\github-avatar.png -Color -Square
 ```
 
 That rewrites `YOUR_USERNAME` / `YOUR NAME` across `README.md` and the workflows, draws the
@@ -73,21 +73,21 @@ snake every 12h, radar daily).
 The current one was made with:
 
 ```powershell
-python scripts\dotify.py assets\me.png -o assets\portrait --cols 100 --equalize --detail 0.5 --color --reveal
+python scripts\dotify.py assets\github-avatar.png -o assets\portrait --cols 100 --equalize --detail 0.5 --color --reveal
 ```
 
 Other looks from the same source:
 
 ```powershell
 # green monochrome, matching the contribution-graph palette
-python scripts\dotify.py assets\me.png -o assets\portrait --cols 88 --equalize --detail 0.5 --invert --animate
+python scripts\dotify.py assets\github-avatar.png -o assets\portrait --cols 88 --equalize --detail 0.5 --invert --animate
 
 # literal 0s and 1s instead of dots
-python scripts\dotify.py assets\me.png -o assets\portrait --mode binary --cols 62 --equalize --detail 0.5 --invert
+python scripts\dotify.py assets\github-avatar.png -o assets\portrait --mode binary --cols 62 --equalize --detail 0.5 --invert
 
 # plain text art — paste the .txt into a ``` code block in the README
-python scripts\dotify.py assets\me.png -o assets\portrait --mode ascii --cols 80 --invert
-python scripts\dotify.py assets\me.png -o assets\portrait --mode braille --cols 100 --invert
+python scripts\dotify.py assets\github-avatar.png -o assets\portrait --mode ascii --cols 80 --invert
+python scripts\dotify.py assets\github-avatar.png -o assets\portrait --mode braille --cols 100 --invert
 ```
 
 Worth knowing:
@@ -112,15 +112,15 @@ Worth knowing:
   monochrome version; on the colour one it reads as vertical banding across the face,
   which is why it's off here. It composes with `--reveal` if you want both.
 - `--square` crops to 1:1, with `--focus X,Y` to say which point should end up centred
-  (`0.55,0.45` for a face sitting right of and above the middle). `me.png` is a
-  portrait photo, so `--square --focus 0.5,0.38` is useful if you want a tighter crop.
+  (`0.55,0.45` for a face sitting right of and above the middle). `github-avatar.png`
+  is already square, so `--square` is optional.
 - `--circle` masks to a circle and fades the edge. Good for a tight head shot, but it
   clips the shoulders on this framing.
 - `--invert` if your subject is dark on a light background.
 
 If the source has an alpha channel, it's treated as a subject cutout: nothing is drawn
 outside it, and `--equalize` measures only the subject rather than a huge empty
-background. `me.png` is cut out from a white studio backdrop for that reason.
+background. The portrait is generated from the public GitHub avatar, not a personal photo.
 
 ### The stat and repo cards
 
